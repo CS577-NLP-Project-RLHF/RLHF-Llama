@@ -164,7 +164,7 @@ These series offer a mix of critical acclaim and strong narrative depth, likely 
 """
 rouge = Rouge()
 
-reward_model_name = '/root/trl/examples/research_projects/stack_llama/scripts/gpt2_peft_stack-exchange-paired_rmts__100000_2e-05/checkpoint-32000'
+reward_model_name = '/root/RLHF-Llama/PPO/reward-model-checkpoint-32000'
 reward_model = pipeline("text-classification", model=reward_model_name)
 reward_kwargs = {"return_all_scores": True, "function_to_apply": "none"}
 
