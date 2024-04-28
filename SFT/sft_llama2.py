@@ -43,7 +43,7 @@ from trl.import_utils import is_npu_available, is_xpu_available
 from trl.trainer import ConstantLengthDataset
 
 
-access_token = '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'
+access_token = <TOKEN>
 
 
 @dataclass
