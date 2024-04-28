@@ -32,3 +32,22 @@ warnings
 3. run SFT/sft_llama2.py
 4. run DPO/dpo_llama2.py, or RM/reward_modeling_llama.py + PPO/PPO.py
 5. run merge_peft_adapter.py
+
+
+## Acknowledgement
+Thanks to the tools and public models on Huggingface!
+
+.
+├── DPO
+│   ├── dpo_llama2.py
+│   └── dpo_tuned
+├── PPO
+│   └── PPO.py
+├── RM
+│   └── reward_modeling_llama.py
+├── SFT
+│   ├── results
+│   └── sft_llama2.py
+├── merge_peft_adapter.py
+├── reward_modeling.py
+└── README.md
