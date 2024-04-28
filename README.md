@@ -29,9 +29,9 @@ warnings
 ## Steps
 1. apply for an access_token of meta-llama/Llama-2-7b-hf (Replace access_token = \<TOKEN\> to your own token.)
 2. set the computing process by
-···ruby
+```ruby
 $ accelerate config default
-··· 
+```
 4. run SFT/sft_llama2.py
 5. run DPO/dpo_llama2.py, or RM/reward_modeling_llama.py + PPO/PPO.py
 6. run merge_peft_adapter.py
