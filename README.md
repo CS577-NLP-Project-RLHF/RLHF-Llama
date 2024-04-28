@@ -2,13 +2,13 @@
 
 ## Requirements
 
-evaluate
+evaluate=='0.4.1'
 
 torch=='2.3.0+cu121'
 
-transformers
+transformers=='4.40.1'
 
-trl
+trl=='0.8.6'
 
 typing
 
@@ -16,13 +16,11 @@ peft
 
 accelerate
 
-datasets=='2.17.0'
+datasets=='2.17.0'  # '2.19.0' has issues and it does not work!
 
 bitsandbytes
 
 wandb
-
-warnings
 
 ---
 
