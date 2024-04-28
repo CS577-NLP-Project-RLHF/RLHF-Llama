@@ -4,7 +4,7 @@
 
 evaluate
 
-torch
+torch=='2.3.0+cu121'
 
 transformers
 
@@ -16,7 +16,7 @@ peft
 
 accelerate
 
-datasets==2.17.0
+datasets=='2.17.0'
 
 bitsandbytes
 
@@ -37,6 +37,7 @@ warnings
 ## Acknowledgement
 Thanks to the tools and public models on Huggingface!
 
+
 ```
 .
 ├── DPO
@@ -50,6 +51,5 @@ Thanks to the tools and public models on Huggingface!
 │   ├── results
 │   └── sft_llama2.py
 ├── merge_peft_adapter.py
-├── reward_modeling.py
 └── README.md
 ```
