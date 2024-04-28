@@ -32,9 +32,9 @@ warnings
 ```ruby
 $ accelerate config default
 ```
-4. run SFT/sft_llama2.py
-5. run DPO/dpo_llama2.py, or RM/reward_modeling_llama.py + PPO/PPO.py
-6. run merge_peft_adapter.py
+4. run the supervised fine-tuning by "SFT/sft_llama2.py"
+5. run DPO by "DPO/dpo_llama2.py", or reward modeling + PPO by "RM/reward_modeling_llama.py + PPO/PPO.py"
+6. run "merge_peft_adapter.py" to merge the fine-tuned layers and the original model.
 
 
 ## Acknowledgement
