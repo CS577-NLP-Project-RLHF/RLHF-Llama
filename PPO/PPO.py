@@ -1,16 +1,4 @@
-from dataclasses import dataclass, field
-from typing import Optional
-import torch
-from accelerate import Accelerator
-from datasets import load_dataset
-from peft import LoraConfig
-from tqdm import tqdm
-from transformers import Adafactor, AutoTokenizer, HfArgumentParser, pipeline
-
-from trl import AutoModelForCausalLMWithValueHead, PPOConfig, PPOTrainer, set_seed
-from trl.core import LengthSampler
-
-'''
+"""
 accelerate launch PPO_PG/PPO.py 
     --log_with=wandb 
     --model_name=<LLAMA_SE_MODEL> \
@@ -27,7 +15,20 @@ accelerate launch PPO_PG/PPO.py
     --learning_rate=1.4e-5 \
     --early_stopping=True \
     --output_dir=llama-se-rl-finetune-128-8-8-1.4e-5_adam
-'''
+"""
+
+from dataclasses import dataclass, field
+from typing import Optional
+import torch
+from accelerate import Accelerator
+from datasets import load_dataset
+from peft import LoraConfig
+from tqdm import tqdm
+from transformers import Adafactor, AutoTokenizer, HfArgumentParser, pipeline
+
+from trl import AutoModelForCausalLMWithValueHead, PPOConfig, PPOTrainer, set_seed
+from trl.core import LengthSampler
+
 
 tqdm.pandas()
 
